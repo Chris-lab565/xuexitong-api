@@ -90,10 +90,5 @@ app.post('/api/ai/answer', async (req, res) => {
   }
 });
 
-// 启动服务器
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`服务器运行在端口 ${PORT}`);
-});
-
+// Vercel 需要导出 app
 module.exports = app;
